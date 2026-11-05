@@ -1,0 +1,30 @@
+# Galaxy S (GT-I9000) blobs, all installed to /vendor.
+# Source: xc-racer99/proprietary_vendor_samsung (aosp-7.1, galaxysmtd and aries-common).
+
+# Graphics - PowerVR SGX540, DDK 1.8@2112805, the Nexus S (crespo) build
+# ("1.8.GOOGLENEXUS"), matching the kernel's pvrsrvkm
+lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
+lib/egl/libGLESv2_POWERVR_SGX540_120.so
+lib/hw/gralloc.aries.so
+lib/libIMGegl.so
+lib/libPVRScopeServices.so
+lib/libglslcompiler.so
+lib/libpvr2d.so
+lib/libpvrANDROID_WSEGL.so
+lib/libsrv_init.so
+lib/libsrv_um.so
+lib/libusc.so
+
+# Radio - XMM6160; libsec-ril.so with its libhardware_legacy.so dependency
+# renamed to libsecril-compat.so (as CyanogenMod shipped it)
+lib/libsec-ril.so
+firmware/modem.bin
+
+# GPS - BCM4751
+bin/gpsd
+bin/Certification.cer
+lib/hw/gps.aries.so
+
+# Bluetooth / Wi-Fi - BCM4329
+firmware/bcm4329.hcd
+firmware/nvram_net.txt
